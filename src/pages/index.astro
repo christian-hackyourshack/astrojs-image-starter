@@ -1,4 +1,5 @@
 ---
+import { Image } from "@astrojs/image/components";
 import Card from "../components/Card.astro";
 import Layout from "../layouts/Layout.astro";
 import astronaut from "./astronaut.jpg";
@@ -35,7 +36,7 @@ import astronaut from "./astronaut.jpg";
     </ul>
 
     <a href="/markdown">
-      <img src={astronaut} alt="Astronaut with vacuum" class="avatar" />
+      <Image src={astronaut} alt="Astronaut with vacuum" class="avatar" />
     </a>
   </main>
 </Layout>
